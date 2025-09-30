@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rail Line Generator</title>
+</head>
+<body>
+    <h1>Enter the names of the cities you want in your rail line!</h1>
+    <a href="/about">About</a>
+    <p>select the average speed of the train line</p>
+    <input type="range" min="90" max="200" step="10" value="140" class="slider" id="speedRange">
+    <p>Average Speed: <span id="output"></span></p>
+
+    <!-- selector for number of inputs -->
+    <div class="input-controls">
+        <div class="input-group">
+            <label for="num-inputs">Number of cities:</label>
+            <div class="number-input">
+                <button type="button" id="decrement-btn" class="number-btn">-</button>
+                <input type="number" id="num-inputs" min="2" max="20" value="4">
+                <button type="button" id="increment-btn" class="number-btn">+</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- form for submission -->
+    <form id="main-form" action="/results" method="POST">
+        <!-- dynamic input container -->
+        <div id="dynamic-inputs">
+        </div>
+        <button type="submit">Create Line</button>
+    </form>
+
+    <div class="error_message">{{ error_message }}</div>
+
+    
+
+    <script src="../static/js/index.js"></script>
+</body>
+</html>
