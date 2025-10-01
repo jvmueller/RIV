@@ -1,12 +1,8 @@
-import os
 from demand.rail_line import RailLine, LineMode
 from data.models import Metro
+import os
 from data.database import get_session
-from data.metro_operations import (
-    import_metros_from_csv,
-    find_metro,
-    clear_metros
-)
+from data.metro_operations import import_metros_from_csv, find_metro, clear_metros, get_all_metros
 
 
 #region line creation
@@ -284,7 +280,7 @@ def get_metros_from_names(session, inputs: list[str], debug: bool = False) -> li
 
 def init_database(session):
     clear_metros(session)
-    import_metros_from_csv(session, "metros.csv")
+    import_metros_from_csv(session, "csv/metros.csv")
 
 
 
@@ -299,7 +295,7 @@ def get_line(city_names: list[str], avg_speed: float, reinitialize_database: boo
         return line
     else:
         session.close()
-        return None
+        return line
 
 
 
@@ -315,4 +311,3 @@ if __name__ == "__main__":
         print(line.get_city_pair_info() + "\n")
     else:
         print("error: invalid cities")
-    

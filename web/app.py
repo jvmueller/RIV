@@ -30,7 +30,7 @@ def results():
         line_str = line.to_string()
         city_pair_str = line.get_city_pair_info()
         return render_template('result.html', mode_str = mode_str, line_str = line_str, city_pair_str = city_pair_str)
-    else:   
+    else:
         return render_template('index.html', error_message = "error: invalid city names entered.")
         
     

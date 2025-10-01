@@ -15,3 +15,21 @@ Rail Infrastructure Visualizer (RIV) is a web application that allows users to v
     ```bash
     make bootstrap
     ```
+
+
+# Running Program
+first, activate virtual environment
+```bash
+source .venv/bin/activate
+```
+
+
+Run Web Application:
+```bash
+make run
+```
+
+Run CLI Application:
+```bash
+make cli
+```
