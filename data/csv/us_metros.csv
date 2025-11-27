@@ -1,0 +1,438 @@
+Country,Metro Area,State,Population,lat,lng
+US,Anchorage, AK ,"407,213",61.151,-149.109
+US,Fairbanks, AK ,"94,951",64.835,-147.653
+US,Anniston, AL ,"116,427",33.671,-85.814
+US,Auburn, AL ,"206,006",32.609,-85.490
+US,Birmingham, AL ,"1,192,583",33.528,-86.797
+US,Daphne, AL ,"261,608",30.626,-87.882
+US,Decatur, AL ,"159,651",39.856,-88.934
+US,Dothan, AL ,"154,766",31.234,-85.407
+US,Florence, AL ,"156,287",34.178,-79.790
+US,Gadsden, AL ,"103,207",34.009,-86.016
+US,Huntsville, AL ,"542,297",34.698,-86.641
+US,Mobile, AL ,"412,339",30.678,-88.116
+US,Montgomery, AL ,"387,885",32.348,-86.267
+US,Tuscaloosa, AL ,"281,963",33.235,-87.527
+US,Fort Smith, AR,"232,848",35.350,-94.370
+US,Fayetteville, AR ,"605,615",36.071,-94.166
+US,Hot Springs, AR ,"99,902",34.489,-93.050
+US,Jonesboro, AR ,"138,152",35.821,-90.679
+US,Little Rock, AR ,"769,258",34.726,-92.358
+US,Flagstaff, AZ ,"145,161",35.187,-111.619
+US,Lake Havasu City, AZ ,"226,479",34.501,-114.311
+US,Phoenix, AZ ,"5,186,958",33.572,-112.089
+US,Prescott Valley, AZ ,"252,013",34.598,-112.319
+US,Sierra Vista, AZ ,"125,773",31.563,-110.315
+US,Tucson, AZ ,"1,080,149",32.154,-110.879
+US,Yuma, AZ ,"220,310",32.600,-114.549
+US,Bakersfield, CA ,"922,529",35.353,-119.036
+US,Chico, CA ,"208,334",39.758,-121.816
+US,El Centro, CA ,"181,724",32.787,-115.560
+US,Fresno, CA ,"1,189,557",36.783,-119.794
+US,Hanford, CA ,"154,913",36.327,-119.655
+US,Los Angeles, CA ,"12,927,614",34.114,-118.407
+US,Merced, CA ,"296,774",37.306,-120.478
+US,Modesto, CA ,"556,972",37.638,-121.003
+US,Napa, CA ,"132,727",38.298,-122.301
+US,Oxnard, CA ,"835,427",34.196,-119.182
+US,Redding, CA ,"181,121",40.570,-122.365
+US,Riverside, CA ,"4,744,214",33.938,-117.395
+US,Sacramento, CA ,"2,463,127",38.568,-121.469
+US,Salinas, CA ,"436,251",36.688,-121.632
+US,San Diego, CA ,"3,298,799",32.831,-117.122
+US,San Francisco, CA ,"4,648,486",37.756,-122.445
+US,San Jose, CA ,"1,995,484",37.301,-121.848
+US,San Luis Obispo, CA ,"281,843",35.267,-120.669
+US,Santa Cruz, CA ,"262,406",36.979,-122.035
+US,Santa Maria, CA ,"444,500",34.933,-120.443
+US,Santa Rosa, CA ,"485,375",38.446,-122.707
+US,Stockton, CA ,"816,108",37.977,-121.311
+US,Vallejo, CA ,"455,101",38.113,-122.234
+US,Visalia, CA ,"483,546",36.328,-119.327
+US,Yuba City, CA ,"186,014",39.136,-121.638
+US,Boulder, CO ,"330,262",40.025,-105.252
+US,Colorado Springs, CO ,"777,634",38.867,-104.761
+US,Denver, CO ,"3,052,498",39.762,-104.876
+US,Fort Collins, CO ,"374,574",40.548,-105.066
+US,Grand Junction, CO ,"161,260",39.088,-108.567
+US,Greeley, CO ,"369,745",40.415,-104.771
+US,Pueblo, CO ,"169,866",38.270,-104.611
+US,Bridgeport, CT ,"972,679",41.192,-73.195
+US,Hartford, CT ,"1,169,048",41.766,-72.683
+US,New Haven, CT ,"576,718",41.311,-72.925
+US,Norwich, CT ,"282,602",41.550,-72.088
+US,Waterbury, CT ,"462,220",41.558,-73.036
+US,Washington, DC,"6,436,489",38.905,-77.016
+US,Washington, DC,"1,843,357",38.905,-77.016
+US,Wilmington, DE,"760,272",34.210,-77.887
+US,Dover, DE ,"192,690",39.161,-75.520
+US,Cape Coral, FL ,"860,959",26.644,-81.996
+US,Crestview, FL ,"310,149",30.748,-86.579
+US,Deltona, FL ,"739,516",28.905,-81.214
+US,Gainesville, FL ,"359,780",29.680,-82.346
+US,Homosassa Springs, FL ,"170,174",28.812,-82.539
+US,Jacksonville, FL ,"1,760,548",30.332,-81.675
+US,Lakeland, FL ,"852,878",28.056,-81.955
+US,Miami, FL ,"6,457,988",25.784,-80.210
+US,Naples, FL ,"416,233",26.150,-81.794
+US,North Port, FL ,"934,956",27.058,-82.198
+US,Ocala, FL ,"428,905",29.178,-82.151
+US,Orlando, FL ,"2,940,513",28.477,-81.337
+US,Palm Bay, FL ,"658,447",27.963,-80.659
+US,Panama City, FL ,"226,221",30.200,-85.600
+US,Pensacola, FL ,"538,928",30.441,-87.191
+US,Port St. Lucie, FL ,"556,336",27.280,-80.388
+US,Punta Gorda, FL ,"212,122",26.894,-82.051
+US,Sebastian, FL ,"172,139",27.782,-80.482
+US,Sebring, FL ,"109,778",27.477,-81.453
+US,Tallahassee, FL ,"397,675",30.455,-84.253
+US,Tampa, FL ,"3,424,560",27.995,-82.445
+US,Wildwood, FL ,"154,693",38.580,-90.670
+US,Augusta, GA,"636,760",33.365,-82.071
+US,Columbus, GA,"324,343",39.986,-82.986
+US,Albany, GA ,"145,451",42.666,-73.799
+US,Athens, GA ,"223,689",33.951,-83.369
+US,Atlanta, GA ,"6,411,149",33.763,-84.422
+US,Brunswick, GA ,"117,135",31.145,-81.475
+US,Dalton, GA ,"146,386",34.769,-84.972
+US,Gainesville, GA ,"221,745",29.680,-82.346
+US,Hinesville, GA ,"89,046",31.825,-81.614
+US,Macon, GA ,"237,617",32.807,-83.697
+US,Rome, GA ,"101,390",34.266,-85.186
+US,Savannah, GA ,"431,589",32.029,-81.182
+US,Valdosta, GA ,"152,588",30.850,-83.279
+US,Warner Robins, GA ,"204,110",32.596,-83.653
+US,Honolulu, HI ,"998,747",21.329,-157.846
+US,Kahului, HI ,"163,769",20.872,-156.460
+US,Davenport, IA,"381,801",41.557,-90.605
+US,Sioux City, IA,"145,994",42.496,-96.390
+US,Ames, IA ,"129,227",42.026,-93.622
+US,Cedar Rapids, IA ,"278,677",41.966,-91.678
+US,Des Moines, IA ,"753,913",41.573,-93.611
+US,Dubuque, IA ,"99,242",42.500,-90.707
+US,Iowa City, IA ,"182,711",41.656,-91.530
+US,Waterloo, IA ,"170,081",42.492,-92.352
+US,Lewiston, ID,"65,370",44.092,-70.168
+US,Boise City, ID ,"845,877",36.731,-102.510
+US,Coeur d'Alene, ID ,"188,323",47.704,-116.794
+US,Idaho Falls, ID ,"171,233",43.487,-112.036
+US,Pocatello, ID ,"91,010",42.872,-112.465
+US,Twin Falls, ID ,"122,565",42.565,-114.461
+US,Chicago, IL,"9,408,576",41.838,-87.687
+US,Bloomington, IL ,"172,069",40.476,-88.970
+US,Champaign, IL ,"242,453",40.114,-88.274
+US,Decatur, IL ,"100,737",39.856,-88.934
+US,Kankakee, IL ,"106,410",41.102,-87.864
+US,Peoria, IL ,"364,565",40.752,-89.615
+US,Rockford, IL ,"337,103",42.260,-89.064
+US,Springfield, IL ,"206,308",42.116,-72.540
+US,South Bend, IN,"325,294",41.677,-86.270
+US,Bloomington, IN ,"162,553",40.476,-88.970
+US,Columbus, IN ,"84,741",39.986,-82.986
+US,Elkhart, IN ,"207,436",41.692,-85.963
+US,Evansville, IN ,"271,793",37.988,-87.534
+US,Fort Wayne, IN ,"462,978",41.089,-85.144
+US,Indianapolis, IN ,"2,174,833",39.777,-86.146
+US,Kokomo, IN ,"84,082",40.464,-86.128
+US,Lafayette, IN ,"229,701",30.208,-92.033
+US,Michigan City, IN ,"111,348",41.709,-86.869
+US,Muncie, IN ,"112,951",40.199,-85.395
+US,Terre Haute, IN ,"168,874",39.466,-87.375
+US,Lawrence, KS ,"121,989",38.960,-95.264
+US,Manhattan, KS ,"134,892",40.783,-73.966
+US,Topeka, KS ,"232,648",39.035,-95.696
+US,Wichita, KS ,"661,217",37.690,-97.344
+US,Louisville, KY,"1,394,234",38.166,-85.649
+US,Paducah, KY,"102,395",37.071,-88.644
+US,Bowling Green, KY ,"195,159",36.972,-86.438
+US,Elizabethtown, KY ,"127,954",37.703,-85.877
+US,Lexington, KY ,"533,366",38.042,-84.459
+US,Owensboro, KY ,"113,583",37.758,-87.117
+US,Alexandria, LA ,"148,008",38.819,-77.086
+US,Baton Rouge, LA ,"882,652",30.442,-91.131
+US,Hammond, LA ,"139,823",41.617,-87.491
+US,Houma, LA ,"199,206",29.580,-90.706
+US,Lafayette, LA ,"419,704",30.208,-92.033
+US,Lake Charles, LA ,"242,975",30.201,-93.211
+US,Monroe, LA ,"221,921",32.519,-92.077
+US,New Orleans, LA ,"966,230",30.069,-89.929
+US,Shreveport, LA ,"383,269",32.465,-93.796
+US,Slidell, LA ,"277,615",30.289,-89.783
+US,Boston, MA,"5,025,517",42.319,-71.085
+US,Pittsfield, MA ,"128,726",42.452,-73.261
+US,Springfield, MA ,"464,151",42.116,-72.540
+US,Worcester, MA ,"881,248",42.271,-71.808
+US,Hagerstown, MD,"311,295",39.640,-77.722
+US,Baltimore, MD ,"2,859,024",39.305,-76.614
+US,Lexington Park, MD ,"211,382",38.253,-76.442
+US,Salisbury, MD ,"131,570",38.376,-75.587
+US,Bangor, ME ,"156,840",44.832,-68.791
+US,Lewiston, ME ,"115,272",44.092,-70.168
+US,Portland, ME ,"571,534",45.537,-122.650
+US,Ann Arbor, MI ,"373,875",42.276,-83.731
+US,Battle Creek, MI ,"133,785",42.299,-85.230
+US,Bay City, MI ,"102,651",43.590,-83.889
+US,Detroit, MI ,"4,400,578",42.383,-83.102
+US,Flint, MI ,"402,279",43.024,-83.692
+US,Grand Rapids, MI ,"1,178,826",42.962,-85.656
+US,Jackson, MI ,"160,233",32.316,-90.213
+US,Kalamazoo, MI ,"264,780",42.275,-85.588
+US,Lansing, MI ,"479,971",42.714,-84.560
+US,Midland, MI ,"84,022",32.024,-102.115
+US,Monroe, MI ,"156,045",32.519,-92.077
+US,Muskegon, MI ,"177,428",43.228,-86.256
+US,Niles, MI ,"152,703",42.028,-87.810
+US,Saginaw, MI ,"187,714",43.420,-83.950
+US,Traverse City, MI ,"156,634",44.755,-85.604
+US,Duluth, MN,"281,815",46.776,-92.139
+US,Minneapolis, MN,"3,757,952",44.964,-93.268
+US,Mankato, MN ,"105,193",44.172,-93.977
+US,Rochester, MN ,"230,742",43.168,-77.616
+US,St. Cloud, MN ,"205,878",45.534,-94.172
+US,Cape Girardeau, MO,"98,862",37.311,-89.560
+US,Joplin, MO,"207,131",37.076,-94.502
+US,Kansas City, MO,"2,253,579",39.124,-94.554
+US,St. Joseph, MO,"119,124",39.760,-94.821
+US,St. Louis, MO,"2,811,927",38.636,-90.245
+US,Columbia, MO ,"219,426",34.038,-80.904
+US,Jefferson City, MO ,"151,523",38.568,-92.176
+US,Springfield, MO ,"496,975",42.116,-72.540
+US,Gulfport, MS ,"426,793",30.427,-89.070
+US,Hattiesburg, MS ,"156,575",31.307,-89.317
+US,Jackson, MS ,"606,178",32.316,-90.213
+US,Billings, MT ,"192,531",45.789,-108.553
+US,Bozeman, MT ,"126,984",45.683,-111.056
+US,Great Falls, MT ,"84,523",47.502,-111.300
+US,Helena, MT ,"96,735",46.597,-112.020
+US,Missoula, MT ,"127,741",46.875,-114.021
+US,Charlotte, NC,"2,883,370",35.208,-80.830
+US,Asheville, NC ,"422,333",35.571,-82.554
+US,Burlington, NC ,"183,040",36.076,-79.469
+US,Durham, NC ,"620,522",35.979,-78.902
+US,Fayetteville, NC ,"393,812",36.071,-94.166
+US,Goldsboro, NC ,"120,338",35.378,-77.972
+US,Greensboro, NC ,"800,722",36.096,-79.827
+US,Greenville, NC ,"180,783",34.835,-82.365
+US,Hickory, NC ,"373,031",35.741,-81.322
+US,Jacksonville, NC ,"212,954",30.332,-81.675
+US,Pinehurst, NC ,"108,417",35.192,-79.468
+US,Raleigh, NC ,"1,562,009",35.832,-78.643
+US,Rocky Mount, NC ,"147,114",35.969,-77.804
+US,Wilmington, NC ,"480,522",34.210,-77.887
+US,Winston, NC ,"705,187",43.120,-123.425
+US,Fargo, ND,"267,793",46.865,-96.829
+US,Grand Forks, ND,"104,184",47.921,-97.088
+US,Bismarck, ND ,"139,183",46.814,-100.769
+US,Minot, ND ,"75,938",48.238,-101.278
+US,Omaha, NE,"1,001,010",41.263,-96.053
+US,Grand Island, NE ,"77,278",40.922,-98.359
+US,Lincoln, NE ,"350,626",40.810,-96.678
+US,Manchester, NH ,"430,462",42.985,-71.445
+US,Atlantic City, NJ ,"372,989",39.380,-74.453
+US,Trenton, NJ ,"392,138",40.224,-74.764
+US,Vineland, NJ ,"155,678",39.465,-74.998
+US,Albuquerque, NM ,"926,303",35.105,-106.647
+US,Farmington, NM ,"120,817",36.756,-108.182
+US,Las Cruces, NM ,"229,366",32.327,-106.789
+US,Santa Fe, NM ,"157,765",35.662,-105.982
+US,Carson City, NV ,"58,148",39.151,-119.748
+US,Las Vegas, NV ,"2,398,871",36.233,-115.265
+US,Reno, NV ,"575,110",39.550,-119.848
+US,New York, NY,"19,940,274",40.694,-73.925
+US,New York, NY,"12,172,495",40.694,-73.925
+US,Albany, NY ,"913,485",42.666,-73.799
+US,Binghamton, NY ,"243,971",42.101,-75.909
+US,Buffalo, NY ,"1,160,172",42.902,-78.849
+US,Elmira, NY ,"81,115",42.094,-76.810
+US,Glens Falls, NY ,"125,127",43.311,-73.646
+US,Ithaca, NY ,"105,602",42.444,-76.503
+US,Kingston, NY ,"182,977",41.930,-73.997
+US,Kiryas Joel, NY ,"711,730",41.341,-74.167
+US,Rochester, NY ,"1,057,218",43.168,-77.616
+US,Syracuse, NY ,"655,189",43.041,-76.144
+US,Utica, NY ,"287,932",43.096,-75.226
+US,Watertown, NY ,"113,140",43.973,-75.909
+US,Cincinnati, OH,"2,302,815",39.141,-84.506
+US,Akron, OH ,"702,209",41.080,-81.522
+US,Canton, OH ,"400,551",40.808,-81.368
+US,Cleveland, OH ,"2,171,877",41.476,-81.681
+US,Columbus, OH ,"2,225,377",39.986,-82.986
+US,Dayton, OH ,"821,740",39.781,-84.200
+US,Lima, OH ,"100,866",40.741,-84.112
+US,Mansfield, OH ,"124,853",40.766,-82.528
+US,Sandusky, OH ,"113,533",41.447,-82.702
+US,Springfield, OH ,"134,985",42.116,-72.540
+US,Toledo, OH ,"601,396",41.664,-83.583
+US,Youngstown, OH ,"426,086",41.099,-80.646
+US,Enid, OK ,"62,007",36.406,-97.870
+US,Lawton, OK ,"126,899",34.618,-98.420
+US,Oklahoma City, OK ,"1,497,821",35.468,-97.514
+US,Tulsa, OK ,"1,059,803",36.128,-95.904
+US,Portland, OR,"2,537,904",45.537,-122.650
+US,Albany, OR ,"132,474",42.666,-73.799
+US,Bend, OR ,"264,407",44.056,-121.310
+US,Corvallis, OR ,"98,899",44.570,-123.278
+US,Eugene, OR ,"382,396",44.056,-123.117
+US,Grants Pass, OR ,"88,276",42.433,-123.332
+US,Medford, OR ,"221,331",42.337,-122.854
+US,Salem, OR ,"443,416",44.923,-123.024
+US,Allentown, PA,"886,418",40.596,-75.476
+US,Philadelphia, PA,"6,330,422",40.008,-75.134
+US,Altoona, PA ,"120,269",40.508,-78.401
+US,Chambersburg, PA ,"159,285",39.932,-77.656
+US,Erie, PA ,"267,750",42.117,-80.073
+US,Gettysburg, PA ,"107,914",39.830,-77.234
+US,Harrisburg, PA ,"615,361",40.275,-76.884
+US,Johnstown, PA ,"130,108",40.326,-78.919
+US,Lancaster, PA ,"563,293",40.042,-76.301
+US,Lebanon, PA ,"145,319",40.341,-76.423
+US,Pittsburgh, PA ,"2,429,917",40.440,-79.976
+US,Reading, PA ,"439,117",40.340,-75.927
+US,Scranton, PA ,"574,009",41.404,-75.665
+US,State College, PA ,"159,805",40.791,-77.857
+US,Williamsport, PA ,"113,236",41.240,-77.037
+US,York, PA ,"471,240",39.965,-76.732
+US,Providence, RI,"1,700,901",41.823,-71.419
+US,Charleston, SC ,"869,940",32.817,-79.969
+US,Columbia, SC ,"870,193",34.038,-80.904
+US,Florence, SC ,"200,474",34.178,-79.790
+US,Greenville, SC ,"996,680",34.835,-82.365
+US,Hilton Head Island, SC ,"237,393",32.190,-80.750
+US,Myrtle Beach, SC ,"413,391",33.709,-78.884
+US,Spartanburg, SC ,"395,934",34.944,-81.925
+US,Sumter, SC ,"104,776",33.939,-80.393
+US,Sioux Falls, SD,"308,266",43.540,-96.731
+US,Rapid City, SD ,"156,227",44.072,-103.220
+US,Chattanooga, TN,"588,050",35.066,-85.248
+US,Clarksville, TN,"345,955",36.569,-87.341
+US,Kingsport, TN,"313,876",36.522,-82.545
+US,Memphis, TN,"1,339,345",35.109,-89.966
+US,Cleveland, TN ,"132,120",41.476,-81.681
+US,Jackson, TN ,"183,680",32.316,-90.213
+US,Johnson City, TN ,"214,948",36.341,-82.381
+US,Knoxville, TN ,"957,608",35.969,-83.950
+US,Morristown, TN ,"126,932",36.204,-83.300
+US,Nashville, TN ,"2,150,553",36.172,-86.784
+US,Texarkana, TX,"145,576",33.450,-94.085
+US,Abilene, TX ,"184,278",32.454,-99.738
+US,Amarillo, TX ,"274,650",35.198,-101.832
+US,Austin, TX ,"2,550,637",30.301,-97.752
+US,Beaumont, TX ,"398,733",30.085,-94.145
+US,Brownsville, TX ,"431,874",25.998,-97.458
+US,College Station, TX ,"287,462",30.585,-96.296
+US,Corpus Christi, TX ,"450,187",27.725,-97.377
+US,Dallas, TX ,"8,344,032",32.794,-96.767
+US,Eagle Pass, TX ,"58,829",28.713,-100.484
+US,El Paso, TX ,"879,392",31.848,-106.430
+US,Houston, TX ,"7,796,182",29.786,-95.389
+US,Killeen, TX ,"509,487",31.075,-97.730
+US,Laredo, TX ,"272,823",27.563,-99.487
+US,Longview, TX ,"295,490",32.519,-94.762
+US,Lubbock, TX ,"367,109",33.566,-101.888
+US,McAllen, TX ,"914,820",26.225,-98.247
+US,Midland, TX ,"188,766",32.024,-102.115
+US,Odessa, TX ,"170,022",31.880,-102.345
+US,San Angelo, TX ,"121,629",31.442,-100.450
+US,San Antonio, TX ,"2,763,006",29.463,-98.524
+US,Sherman, TX ,"150,532",33.627,-96.622
+US,Tyler, TX ,"249,091",32.318,-95.306
+US,Victoria, TX ,"99,170",28.829,-96.985
+US,Waco, TX ,"307,123",31.560,-97.188
+US,Wichita Falls, TX ,"149,869",33.907,-98.529
+US,Logan, UT,"161,125",41.740,-111.842
+US,Ogden, UT ,"667,681",41.228,-111.968
+US,Provo, UT ,"760,531",40.246,-111.646
+US,Salt Lake City, UT ,"1,300,762",40.778,-111.931
+US,St. George, UT ,"207,943",37.076,-113.575
+US,Arlington, VA,"3,211,542",32.700,-97.125
+US,Virginia Beach, VA,"1,794,278",36.734,-76.044
+US,Winchester, VA,"149,702",39.174,-78.175
+US,Blacksburg, VA ,"182,041",37.230,-80.428
+US,Charlottesville, VA ,"227,336",38.038,-78.486
+US,Harrisonburg, VA ,"138,838",38.436,-78.874
+US,Lynchburg, VA ,"266,432",37.400,-79.191
+US,Richmond, VA ,"1,370,165",37.530,-77.476
+US,Roanoke, VA ,"315,749",37.279,-79.958
+US,Staunton, VA ,"128,481",38.159,-79.061
+US,Burlington, VT ,"229,445",36.076,-79.469
+US,Bellingham, WA ,"234,954",48.755,-122.469
+US,Bremerton, WA ,"281,420",47.544,-122.712
+US,Kennewick, WA ,"319,428",46.198,-119.173
+US,Longview, WA ,"113,982",32.519,-94.762
+US,Mount Vernon, WA ,"132,736",40.914,-73.829
+US,Olympia, WA ,"302,912",47.042,-122.896
+US,Seattle, WA ,"4,145,494",47.621,-122.324
+US,Spokane, WA ,"604,962",47.667,-117.433
+US,Walla Walla, WA ,"62,068",46.067,-118.337
+US,Wenatchee, WA ,"127,023",47.436,-120.330
+US,Yakima, WA ,"258,523",46.592,-120.550
+US,La Crosse, WI,"170,763",43.824,-91.227
+US,Appleton, WI ,"248,992",44.278,-88.389
+US,Eau Claire, WI ,"176,153",44.820,-91.495
+US,Fond du Lac, WI ,"104,269",43.772,-88.440
+US,Green Bay, WI ,"334,697",44.515,-87.990
+US,Janesville, WI ,"165,461",42.685,-89.014
+US,Kenosha, WI ,"168,754",42.587,-87.877
+US,Madison, WI ,"707,606",43.082,-89.393
+US,Milwaukee, WI ,"1,574,452",43.064,-87.968
+US,Oshkosh, WI ,"173,307",44.023,-88.562
+US,Racine, WI ,"198,651",42.727,-87.814
+US,Sheboygan, WI ,"118,331",43.740,-87.732
+US,Wausau, WI ,"139,091",44.962,-89.646
+US,Huntington, WV,"366,920",38.411,-82.435
+US,Weirton, WV,"113,239",40.406,-80.567
+US,Wheeling, WV,"135,136",42.131,-87.924
+US,Beckley, WV ,"110,979",37.788,-81.184
+US,Charleston, WV ,"202,091",32.817,-79.969
+US,Morgantown, WV ,"142,752",39.638,-79.946
+US,Parkersburg, WV ,"87,681",39.262,-81.542
+US,Casper, WY ,"80,410",42.842,-106.321
+US,Cheyenne, WY ,"101,783",41.135,-104.790
+MX,Mexicali,Baja California,1102342,32.663,-115.468
+MX,Tijuana,Baja California,2002000,32.525,-117.033
+MX,Ciudad del Carmen,Campeche,191238,18.633,-91.833
+MX,Juárez,Chihuahua,1321004,31.745,-106.485
+MX,Parral,Chihuahua,104836,26.933,-105.667
+MX,Mexico City,Ciudad de México,21804000,19.433,-99.133
+MX,Matamoros,Coahuila,118337,25.533,-103.250
+MX,Saltillo,Coahuila,864431,25.423,-100.992
+MX,Durango,Durango,654876,24.025,-104.668
+MX,León de los Aldama,Guanajuato,1579803,21.117,-101.683
+MX,San Luis de la Paz,Guanajuato,101370,21.299,-100.516
+MX,Chilpancingo,Guerrero,187251,17.550,-99.500
+MX,Ciudad Guzmán,Jalisco,115000,19.700,-103.467
+MX,Guadalajara,Jalisco,5525000,20.677,-103.348
+MX,Tlaquepaque,Jalisco,664193,20.617,-103.317
+MX,Zapopan,Jalisco,1476491,20.717,-103.400
+MX,Chimalhuacán,México,614453,19.417,-98.900
+MX,Ciudad López Mateos,México,489937,19.550,-99.283
+MX,Ciudad Nezahualcóyotl,México,1072676,19.401,-99.015
+MX,Coacalco,México,293444,19.633,-99.093
+MX,Ecatepec,México,1929926,19.610,-99.060
+MX,Nezahualcóyotl,México,1077208,19.408,-99.019
+MX,San Antonio Enchisi,México,110560,19.707,-99.787
+MX,Tlalnepantla,México,653410,19.537,-99.195
+MX,Toluca,México,223876,19.293,-99.657
+MX,Tultitlán de Mariano Escobedo,México,520557,19.645,-99.169
+MX,Apatzingan de la Constitucion,Michoacán,128250,19.089,-102.351
+MX,Morelia,Michoacán,1011704,19.768,-101.189
+MX,Uruapan,Michoacán,334749,19.421,-102.063
+MX,Zamora,Michoacán,207860,19.983,-102.283
+MX,Tepic,Nayarit,332863,21.508,-104.893
+MX,Ciudad Benito Juárez,Nuevo León,308285,25.650,-100.083
+MX,Monterrey,Nuevo León,5341171,25.667,-100.300
+MX,San Nicolás de los Garza,Nuevo León,443273,25.750,-100.283
+MX,Puebla,Puebla,1576259,19.033,-98.183
+MX,San Martin Texmelucan de Labastida,Puebla,163922,19.283,-98.433
+MX,El Pueblito,Querétaro,115264,20.540,-100.441
+MX,Cancún,Quintana Roo,888797,21.161,-86.848
+MX,Chetumal,Quintana Roo,169028,18.504,-88.305
+MX,Playa del Carmen,Quintana Roo,304942,20.628,-87.076
+MX,Heroica Nogales,Sonora,261137,31.319,-110.946
+MX,Miramar,Tamaulipas,118614,22.338,-97.869
+MX,Martínez de la Torre,Veracruz,110415,20.067,-97.050
+MX,San Andrés Tuxtla,Veracruz,162428,18.448,-95.212
+MX,Tlapacoyan,Veracruz,115000,19.962,-97.211
+MX,Veracruz,Veracruz,428323,19.190,-96.153
+MX,Kanasín,Yucatán,139753,20.934,-89.558
+MX,Guadalupe,Zacatecas,211740,22.753,-102.508
