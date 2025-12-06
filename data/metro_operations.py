@@ -52,11 +52,6 @@ def import_metros_from_csv(session: Session, filename: str) -> None:
 
 
 
-def get_all_metros(session: Session) -> List[Metro]:
-    return session.query(Metro).all()
-
-
-
 def find_metro(session: Session, metro_name: str, debug: bool = False) -> Metro:
     metro = session.query(Metro).filter(Metro.name.ilike(f'%{metro_name}%')).first()
     if metro:

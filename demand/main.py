@@ -2,7 +2,7 @@ from demand.rail_line import RailLine, LineMode
 from data.models import Metro
 import os
 from data.database import get_session
-from data.metro_operations import import_metros_from_csv, find_metro, clear_metros, get_all_metros
+from data.metro_operations import import_metros_from_csv, find_metro, clear_metros
 
 
 #region line creation

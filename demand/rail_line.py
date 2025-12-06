@@ -35,23 +35,24 @@ class RailLine:
 
 
     def init_fitness_curve(self, method = 'linear'):
-        plane_time_offset = 3
-        rail_time_offest = 0.5
-        plane_speed = 440
-        upper_limit: float = round(-(plane_time_offset - rail_time_offest) / (1 / plane_speed - 1 / self.avg_speed),1)
-        print(f"upper distance limit: {upper_limit}")
-        match self.mode:
-            case LineMode.CONVENTIONAL:
-                x_points = [0,25,100,upper_limit,100000]
-                y_points = [0,0, 1, 0,0]
-            case LineMode.SEMIHIGHSPEED:
-                x_points = [0,35,170,upper_limit,100000]
-                y_points = [0,0, 1, 0,0]
-            case LineMode.HIGHSPEED:
-                x_points = [0,50,250,upper_limit,100000]
-                y_points = [0,0, 1, 0,0]
+        plane_time_offset: float = 3
+        plane_speed: float = 457.8
+        rail_time_offset: float = 0.5
+        rail_speed: float = self.avg_speed
+        car_time_offset: float = 0
+        car_speed: float = 64.8
+        
+        upper_limit: float = round(-(plane_time_offset - rail_time_offset) / (1 / plane_speed - 1 / rail_speed),1)
+        lower_limit: float = round(-(rail_time_offset - car_time_offset) / (1 / rail_speed - 1 / car_speed), 1)
+        middle_peak: float = round(-(plane_time_offset - car_time_offset) / (1 / plane_speed - 1 / car_speed), 1)
 
-        fitness_curve = interp1d(np.array(x_points), np.array(y_points),
+        print(f"upper distance limit: {upper_limit}\nlower distance limit: {lower_limit}\nmiddle peak: {middle_peak}")
+
+        x_points = [0,lower_limit,middle_peak,upper_limit,100000]
+        y_points = [0,0, 1, 0,0]
+
+
+        fitness_curve: interp1d = interp1d(np.array(x_points), np.array(y_points),
                                 kind=method, bounds_error=False, fill_value='extrapolate')
         
         self.fitness_curve = fitness_curve
