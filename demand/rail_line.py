@@ -1,12 +1,9 @@
 from itertools import combinations
 import numpy as np
-from data.models import Metro
+from data.database import Metro
 from enum import Enum
 from scipy.interpolate import interp1d
 from geopy.distance import geodesic
-from data.metro_operations import (
-    get_simplified_name
-)
 
 
 class LineMode(Enum):
@@ -46,7 +43,7 @@ class RailLine:
         lower_limit: float = round(-(rail_time_offset - car_time_offset) / (1 / rail_speed - 1 / car_speed), 1)
         middle_peak: float = round(-(plane_time_offset - car_time_offset) / (1 / plane_speed - 1 / car_speed), 1)
 
-        print(f"upper distance limit: {upper_limit}\nlower distance limit: {lower_limit}\nmiddle peak: {middle_peak}")
+        #print(f"upper distance limit: {upper_limit}\nlower distance limit: {lower_limit}\nmiddle peak: {middle_peak}")
 
         x_points = [0,lower_limit,middle_peak,upper_limit,100000]
         y_points = [0,0, 1, 0,0]
@@ -91,8 +88,8 @@ class RailLine:
         end_index: int = max(index_1, index_2)
 
         for i in range(start_index, end_index):
-            city_1_location: tuple[float, float] = (self.cities[i].latitude, self.cities[i].longitude)
-            city_2_location: tuple[float, float] = (self.cities[i+1].latitude, self.cities[i+1].longitude)
+            city_1_location: tuple[float, float] = (self.cities[i].lat, self.cities[i].lng)
+            city_2_location: tuple[float, float] = (self.cities[i+1].lat, self.cities[i+1].lng)
             distance += geodesic(city_1_location, city_2_location).miles
         
         return distance
@@ -105,7 +102,7 @@ class RailLine:
         travel_time: float = distance / self.avg_speed #in hours
         denominator: float = pow(travel_time, 2)
         if denominator == 0:
-            print(f"travel time is zero between {get_simplified_name(city_1.name)} and {get_simplified_name(city_2.name)}")
+            print(f"travel time is zero between {city_1.name} and {city_2.name}")
         return round(1e-11 * self.fitness_curve(distance) * numerator / denominator)
 
     #endregion
@@ -117,13 +114,17 @@ class RailLine:
     def to_string(self) -> str:
         line_str: str = ""
         for i in range(len(self.cities)):
-            line_str += get_simplified_name(self.cities[i].name)
+            line_str += self.cities[i].name
             if i != len(self.cities) - 1:
                 line_str += " - "
-                line_str += str(self.edge_gravities[i])  # Convert to string if it's not already
+                line_str += str(self.ridership(self.edge_gravities[i]))  # Convert to string if it's not already
                 line_str += " - "
         return line_str
-    
+
+
+    #gets ridership from gravity
+    def ridership(self, gravity: float) -> int:
+        return round((0.22 * (gravity/40) + 2.36),1)
 
 
     def get_city_pair_info(self, gravity_percent_threshold: float = 0) -> str:
@@ -137,18 +138,19 @@ class RailLine:
         total_line_gravity: float = round(sum(city_pairs_to_gravity.values()))
 
         result_lines = []
+        total_ridership: float = 0
 
         for key in city_pairs_to_gravity.keys():
             gravity_percent = city_pairs_to_gravity[key] / total_line_gravity
             if gravity_percent < gravity_percent_threshold:
                 break
 
-            city_pair_str = f"{get_simplified_name(key[0].name)} - {get_simplified_name(key[1].name)}"
+            city_pair_str = f"{key[0].name} - {key[1].name}"
             percentage_str = f"{round(100 * gravity_percent, 1)}%"
-
-            line = f"city pair: {city_pair_str:<35} gravity: {city_pairs_to_gravity[key]:<7} total gravity percentage: {percentage_str:<8}  distance: {round(self.distance_on_line(key[0], key[1]))}"
+            total_ridership += self.ridership(city_pairs_to_gravity[key])
+            line = f"city pair: {city_pair_str:<35}  travel time (min): {round(60 * self.distance_on_line(key[0], key[1]) / self.avg_speed):<8}  distance (mi): {round(self.distance_on_line(key[0], key[1])):<8}  ridership percentage: {percentage_str:<8}  ridership (millions/year): {self.ridership(city_pairs_to_gravity[key]):<7}"
             result_lines.append(line)
 
-        result_lines.append(f"\ntotal line gravity: {total_line_gravity}")
+        result_lines.append(f"\ntotal line ridership: {round(total_ridership,1)} million people/year")
 
         return "\n".join(result_lines)

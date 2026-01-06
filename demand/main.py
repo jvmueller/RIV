@@ -1,8 +1,7 @@
 from demand.rail_line import RailLine, LineMode
-from data.models import Metro
+from sqlite3 import Connection
+from data.database import Metro, find_metro, connect, create_database
 import os
-from data.database import get_session
-from data.metro_operations import import_metros_from_csv, find_metro, clear_metros
 
 
 #region line creation
@@ -14,15 +13,15 @@ def print_cities(session, metros: list[Metro]):
 
 
 
-def get_metros_from_cli(session, num_metros: int) -> list[Metro]:
+def get_metros_from_cli(conn: Connection, num_metros: int) -> list[Metro]:
     metros: list[str] = []
     while len(metros) < num_metros:
         name = input(f"Enter metro #{len(metros)+1}: ")
         print(name)
-        metro = find_metro(session, name, True)
+        metro = find_metro(name, conn)
         
         if metro:
-            if metro not in metros:
+            if metro.name not in metros:
                 metros.append(metro.name)
                 print(f"Added {metro.name}")
             else:
@@ -265,10 +264,10 @@ def get_california_lite_corridor() -> list[str]:
 
 
 
-def get_metros_from_names(session, inputs: list[str], debug: bool = False) -> list[Metro]:
+def get_metros_from_names(conn: Connection, inputs: list[str], debug: bool = False) -> list[Metro]:
     metros: list[Metro] = []
     for metro_name in inputs:
-        metro: Metro = find_metro(session, metro_name, debug)
+        metro: Metro = find_metro(metro_name, conn, debug)
         if metro:
             metros.append(metro)
         else:
@@ -278,33 +277,29 @@ def get_metros_from_names(session, inputs: list[str], debug: bool = False) -> li
 #endregion
 
 
-def init_database(session):
-    clear_metros(session)
-    import_metros_from_csv(session, "csv/metros.csv")
 
-
-
-def get_line(city_names: list[str], avg_speed: float, reinitialize_database: bool = False) -> RailLine:
-    session = get_session()
-    if reinitialize_database:
-        init_database(session)
-    selected_metros: list[Metro] = get_metros_from_names(session, city_names)
+def get_line(city_names: list[str], avg_speed: float, init_db: bool = False) -> RailLine:
+    conn: Connection = connect()
+    if(init_db):
+        create_database()
+    selected_metros: list[Metro] = get_metros_from_names(conn, city_names)
     if len(selected_metros) == len(city_names):
         line: RailLine = create_line(selected_metros, avg_speed, LineMode.HIGHSPEED)
-        session.close()
+        conn.close()
         return line
     else:
-        session.close()
+        conn.close()
         return line
 
 
 
 
 if __name__ == "__main__":
-    session = get_session()
+    conn: Connection = connect()
+    create_database(conn)
     os.system('clear')
-    line: RailLine = get_line(get_metros_from_cli(session, 3),200)
-    session.close()
+    line: RailLine = get_line(get_metros_from_cli(conn, 3), 200)
+    conn.close()
     if line:
         print(f"rail mode: {line.mode.value}  average speed (mph): {line.avg_speed}\n")
         print(line.to_string() + "\n")
