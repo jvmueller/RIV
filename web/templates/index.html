@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel = "stylesheet" href = "../static/css/index.css">
     <title>Rail Line Generator</title>
 </head>
 <body>
-    <h1>Enter the names of the cities you want in your rail line!</h1>
-    <a href="/about">About</a>
+    <h1 class = "cal">create a line!</h1>
+    <h3 class = "instructions">Enter the names of the cities you want in your rail line!</h3>
+    <a class = "about-link" href="/about">about</a>
     <p>select the average speed of the train line</p>
     <input type="range" min="90" max="200" step="10" value="140" class="slider" id="speedRange">
     <p>Average Speed: <span id="output"></span></p>

@@ -1,0 +1,46 @@
+:root{
+    --white: #ECF2F9;
+    --blue: #A6C5E2;
+    --lightblue: #C9DCEE;
+    --black: #112436;
+    --darkblue: #336A9E;
+
+}
+
+/*Using a custom font*/
+@font-face {
+  font-family: "aveline_eleganzaregular";
+  src: url("../fonts/avelineeleganzaregular-kvqea.woff2") format("woff2");
+  font-display: swap;
+}
+
+body{
+    background: var(--blue);
+}
+
+.cal{
+    font-family: 'aveline_eleganzaregular', sans-serif;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-size: 80px;
+
+}
+
+.instructions{
+    font-family: 'aveline_eleganzaregular', sans-serif;
+    color: var(--black);
+    letter-spacing: 0.1em;
+}
+
+.about-link{
+    display: inline-block;
+    font-family: 'aveline_eleganzaregular', sans-serif;
+    color: var(--white);
+    padding: 5px;
+    background-color: var(--black);
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+}
