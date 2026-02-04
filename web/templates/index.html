@@ -4,35 +4,58 @@
     <link rel = "stylesheet" href = "../static/css/index.css">
     <title>Rail Line Generator</title>
 </head>
-<body>
-    <h1 class = "cal">create a line!</h1>
-    <h3 class = "instructions">Enter the names of the cities you want in your rail line!</h3>
-    <a class = "about-link" href="/about">about</a>
-    <p>select the average speed of the train line</p>
-    <input type="range" min="90" max="200" step="10" value="140" class="slider" id="speedRange">
-    <p>Average Speed: <span id="output"></span></p>
+<header>
+    <ul class = "nav-bar">
+        <li><a class = "nav-option" href = "/homepage">home</a></li>
+        <li><a class = "nav-option" href = "/make-a-line">make a line</a></li>
+        <li><a class = "nav-option" href="/about">about</a></li>
+        <li><a class = "nav-option" href="/contact">contact</a></li>
+        <li><a class = "nav-option" href="/blog">blog</a></li>
+    </ul>
+</header>
+<body class = "main-body">
+    
+    <h1 class = "main-title">make a line!</h1>
 
-    <!-- selector for number of inputs -->
-    <div class="input-controls">
-        <div class="input-group">
-            <label for="num-inputs">Number of cities:</label>
-            <div class="number-input">
-                <button type="button" id="decrement-btn" class="number-btn">-</button>
-                <input type="number" id="num-inputs" min="2" max="20" value="4">
-                <button type="button" id="increment-btn" class="number-btn">+</button>
+    <div class = "mega-container">
+        
+        <div class = "slider-container">
+            <h3 class = "regular-text">Select the average speed of the rail line:</h3>
+            <input type="range" min="90" max="200" step="10" value="140" class="slider" id="speedRange">
+            <p class = "regular-text">Average Speed: <span id="output"></span></p>
+        </div>
+
+        <div class = "cities-container">
+
+            <!-- selector for number of inputs -->
+            <h3 class = "regular-text">Enter the names of the cities you want in your rail line:</h3>
+            <div class="input-controls">
+                <div class="input-group">
+                    <label for="num-inputs" class = "regular-text">Number of cities:</label>
+                    <div class="number-input">
+                        <button type="button" id="decrement-btn" class="number-btn">-</button>
+                        <input type="number" id="num-inputs" min="2" max="20" value="4">
+                        <button type="button" id="increment-btn" class="number-btn">+</button>
+                    </div>
+                </div>
             </div>
+
+        
+            <!-- form for submission -->
+            <form class = "main-form" id="main-form" action="/results" method="POST">
+                <!-- dynamic input container -->
+                <div id="dynamic-inputs">
+                </div>
+                <button type="submit" class = "create-button">create line</button>
+            </form>
+
+            <div class="error_message">{{ error_message }}</div>
         </div>
     </div>
-    
-    <!-- form for submission -->
-    <form id="main-form" action="/results" method="POST">
-        <!-- dynamic input container -->
-        <div id="dynamic-inputs">
-        </div>
-        <button type="submit">Create Line</button>
-    </form>
 
-    <div class="error_message">{{ error_message }}</div>
+    <div class = "submission-button">
+
+    </div>
 
     
 

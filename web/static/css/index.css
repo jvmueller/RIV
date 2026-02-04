@@ -4,43 +4,170 @@
     --lightblue: #C9DCEE;
     --black: #112436;
     --darkblue: #336A9E;
-
+    --orange: #BF6900;
+    --yellow: #DDA647;
 }
 
-/*Using a custom font*/
+/* custom, imported fonts (technically do not have the license to scrubby, but...) */
 @font-face {
-  font-family: "aveline_eleganzaregular";
-  src: url("../fonts/avelineeleganzaregular-kvqea.woff2") format("woff2");
-  font-display: swap;
+    font-family: "scrubby";
+    src: url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.eot");
+    src: url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/48c3ba007379b2678527166da9f052d1.svg#Scrubby W00 Regular")format("svg");
 }
 
+@font-face{
+    font-family: "geist-light";
+    src: url("../fonts/Geist-Light.woff2") format(woff2);
+    font-display: swap;
+}
+
+
+
+
+
+/* all of these are global styling choices */
+
+/* can have a custom green cursor, but it didn't look great */
 body{
-    background: var(--blue);
+    margin: 0;
+    /*cursor: url('../images/constant-cursor.png'), auto;*/
+    background-image: url(https://t3.ftcdn.net/jpg/03/01/35/54/360_F_301355492_a8MJpnsU9oS1M05g7dXDuY1v9RsIvcWL.jpg);
 }
 
-.cal{
-    font-family: 'aveline_eleganzaregular', sans-serif;
+/* all main titles in the scrubby font and centered */
+.main-title{
+    font-family: 'scrubby', sans-serif;
     color: var(--black);
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     font-size: 80px;
-
 }
 
-.instructions{
-    font-family: 'aveline_eleganzaregular', sans-serif;
+/* format used for all standard text */
+.regular-text{
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'geist-light', sans-serif;
     color: var(--black);
-    letter-spacing: 0.1em;
 }
 
-.about-link{
+/* format used for subtitles */
+.subtitle-text{
+    font-family: 'scrubby', sans-serif;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 0.08em;
+    font-size: 50px;
+}
+
+/* navigation bar options and the hover effect */
+.nav-option{
     display: inline-block;
-    font-family: 'aveline_eleganzaregular', sans-serif;
+    font-family: 'scrubby', sans-serif;
     color: var(--white);
-    padding: 5px;
     background-color: var(--black);
+
+    padding: 10px 20px;
     letter-spacing: 0.1em;
-    cursor: pointer;
     text-decoration: none;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-option:hover{
+    background-color: var(--white);
+    color: var(--black);
+    cursor: url('../images/green-ticket.png'), auto;
+}
+
+.nav-bar{
+    list-style-type: none;
+    background: var(--black);
+    width: 100%;
+    padding: 30px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+
+
+
+
+/* all of these are specific stylings for the create a line elements */
+.slider-container{
+    padding: 20px;
+    background: var(--yellow);
+    border-radius: 15px;
+    border: 2px solid var(--black);
+}
+
+.cities-container{
+    background: var(--yellow);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+}
+
+.slider{
+    width: 100%;
+    align-self: center;
+    accent-color: var(--black);
+    
+}
+
+.mega-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.create-button{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'scrubby', sans-serif;
+    display: inline-block;
+    color: var(--white);
+    background-color: var(--black);
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.create-button:hover{
+    background-color: var(--white);
+    color: var(--black);
+    cursor: url('../images/green-ticket.png'), auto;
+}
+
+
+
+/* all of these are specific styling choices for the about page */
+
+.general-info{
+    background: var(--yellow);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+    margin: 20px;
+}
+
+.alldevs{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dev-subsect{
+    background: var(--yellow);
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid var(--black);
+    margin: 20px;
+    width: 100%;
 }
