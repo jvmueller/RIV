@@ -25,6 +25,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "flaviotte";
+    src: url("../fonts/Flaviotte.woff2")format("woff2"),
+    url("../fonts/Flaviotte.woff")format("woff"),
+    url("../fonts/Flaviotte.ttf")format("truetype");
+}
+
 
 
 
@@ -40,10 +47,10 @@ body{
 
 /* all main titles in the scrubby font and centered */
 .main-title{
-    font-family: 'scrubby', sans-serif;
+    font-family: 'flaviotte', sans-serif;
     color: var(--black);
     text-align: center;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.15em;
     font-size: 80px;
 }
 
@@ -76,24 +83,25 @@ body{
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s ease;
+
 }
 
 .nav-option:hover{
     background-color: var(--white);
     color: var(--black);
-    cursor: url('../images/green-ticket.png'), auto;
+    cursor: url('../images/train_icon.png'), auto;
 }
 
 .nav-bar{
     list-style-type: none;
     background: var(--black);
     width: 100%;
-    padding: 30px;
+    padding: 12px;
     margin: 0px;
     display: flex;
     justify-content: center;
-    justify-content: space-evenly;
-    
+    gap: 20px; 
+    align-items: center;
 }
 
 
@@ -105,14 +113,13 @@ body{
     padding: 20px;
     background: var(--yellow);
     border-radius: 15px;
-    border: 2px solid var(--black);
+
 }
 
 .cities-container{
     background: var(--yellow);
     padding: 20px;
     border-radius: 15px;
-    border: 2px solid var(--black);
 }
 
 .slider{
@@ -170,4 +177,10 @@ body{
     border: 2px solid var(--black);
     margin: 20px;
     width: 100%;
+}
+
+.map.container{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
 }

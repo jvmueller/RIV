@@ -141,7 +141,10 @@ class RailLine:
         total_ridership: float = 0
 
         for key in city_pairs_to_gravity.keys():
-            gravity_percent = city_pairs_to_gravity[key] / total_line_gravity
+            if total_line_gravity != 0:
+                gravity_percent = city_pairs_to_gravity[key] / total_line_gravity
+            elif total_line_gravity == 0:
+                gravity_percent = 0
             if gravity_percent < gravity_percent_threshold:
                 break
 
@@ -152,5 +155,68 @@ class RailLine:
             result_lines.append(line)
 
         result_lines.append(f"\ntotal line ridership: {round(total_ridership,1)} million people/year")
+        #co2 info
+        cities_population: int = 0
+        for city in self.cities:
+            cities_population += city.population
+
+        total_distance: float = 0
+        for pair in self.city_pairs:
+            total_distance += self.distance_on_line(pair[0], pair[1])
+        average_distance: float = total_distance / len(self.city_pairs)
+            
+        
+        us_population: int = 342409169
+
+        area_proportion: float = cities_population / us_population
+
+        #average co2 emissions per passenger mile by mode
+        pve: float = 0.47
+        buse: float = 0.39
+        aire: float = 0.34
+        pre: float = 0.30
+        rte: float = 0.17
+        
+        #before HSR market share of transportation modes 
+        domestic_air_ms_before: float = 0.12322
+        highway_ms_before: float = 0.87385
+        commuter_rail_ms_before: float = 0.00103
+        bus_ms_before: float = 0.00190
+        hsr_ms_before: float = 0.0
+        
+
+        #after HSR market share of transportation modes (medium long)
+        domestic_air_ms_after: float = 0.07898
+        highway_ms_after: float = 0.60470
+        commuter_rail_ms_after: float = 0.00067
+        bus_ms_after: float = 0.00145
+        hsr_ms_after: float = 0.31420
+
+        #after HSR market share of transportation modes (medium)
+        domestic_air_ms_after_medium = 0.07245
+        highway_ms_after_medium = 0.64490
+        commuter_rail_ms_after_medium = 0.00080
+        bus_ms_after_medium = 0.00123
+        hsr_ms_after_medium = 0.28062
+        
+        #in units of lbs of co2 emitted per passenger mile
+        old_distribution: float = (domestic_air_ms_before * aire + highway_ms_before * pve + commuter_rail_ms_before * pre + bus_ms_before * buse + hsr_ms_before * rte)
+        new_distribution_med_long: float = (domestic_air_ms_after * aire + highway_ms_after * pve + commuter_rail_ms_after * pre + bus_ms_after * buse + hsr_ms_after * rte)
+        new_distribution_medium: float = (domestic_air_ms_after_medium * aire + highway_ms_after_medium * pve + commuter_rail_ms_after_medium * pre + bus_ms_after_medium * buse + hsr_ms_after_medium * rte)
+
+        before_co2_ppm: float = old_distribution
+        after_co2_ppm: float = 0
+
+        if(average_distance > 310):
+            after_co2_ppm = area_proportion * new_distribution_med_long + (1 - area_proportion) * old_distribution
+
+        else:
+            after_co2_ppm = area_proportion * new_distribution_medium + (1 - area_proportion) * old_distribution
+
+        co2_saved_annually: float = 5753789 * (before_co2_ppm - after_co2_ppm)
+
+        result_lines.append(f"\Estimated Annual CO2 Emissions Saved: {round(co2_saved_annually, 1 )} pounds of CO2")
 
         return "\n".join(result_lines)
+    
+   

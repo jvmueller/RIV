@@ -29,7 +29,17 @@ def results():
         mode_str = f"rail mode: {line.mode.value}  average speed (mph): {line.avg_speed}\n"
         line_str = line.to_string()
         city_pair_str = line.get_city_pair_info()
-        return render_template('result.html', mode_str = mode_str, line_str = line_str, city_pair_str = city_pair_str)
+
+        #creating a list of the Metro objects
+        citiesCords = []
+        for city in line.cities:
+            citiesCords.append({
+                "name" : city.name,
+                "lat" : city.lat,
+                "lng" : city.lng,
+            })
+
+        return render_template('result.html', mode_str = mode_str, line_str = line_str, city_pair_str = city_pair_str, citiesCords = citiesCords)
     else:
         return render_template('index.html', error_message = "error: invalid city names entered.")
         
